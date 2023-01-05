@@ -1,0 +1,12 @@
+<body>
+    {% block content %}
+    
+    {% for switch in switches %}
+    Switch Name: {{ switch.name }} <br>
+      - Serial: {{ switch.serial }} <br>
+      - Reachable at: {{ switch.ip }} <br>
+      <br>
+    {% endfor %}
+    
+    {% endblock %}
+</body>

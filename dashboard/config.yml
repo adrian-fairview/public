@@ -1,0 +1,11 @@
+Devices:
+  iosxe-test-1:
+    type: ios-xe
+    address: sandbox-iosxe-latest-1.cisco.com  
+    username: developer
+    password: C1sco12345
+  nxos-test-1:
+    type: nx-os
+    address: sbx-nxos-mgmt.cisco.com
+    username: admin
+    password: Admin_1234!
