@@ -85,8 +85,8 @@ class DB:
         sql = """ UPDATE switches
                   SET serial = ?,
                   model = ?,
-                  sw_ver = ?
-                  WHERE name = ?
+                  sw_ver = ?,
+                  WHERE name = ?,
                   AND mgmt_ip = ?;
         """
         cur = self.conn.cursor()
@@ -115,8 +115,8 @@ class DB:
                   intop100g = ?,
                   intmedcop = ?,
                   intmedsfp = ?,
-                  intmedvirt = ?
-                  WHERE name = ?
+                  intmedvirt = ?,
+                  WHERE name = ?,
                   AND mgmt_ip = ?;
         """
         cur = self.conn.cursor()
@@ -168,8 +168,8 @@ class DB:
                   phys_address = ?,
                   oper_speed = ?,
                   oper_duplex = ?,
-                  serial = ?
-                  WHERE sw_name = ?
+                  serial = ?,
+                  WHERE sw_name = ?,
                   AND mgmt_ip = ?;
         """
         cur = self.conn.cursor()
@@ -194,6 +194,7 @@ class DB:
                     portdetails[interface]["oper_duplex"],
                     sysinfo["serial"],
                     name,
+                    mgmt_ip,
                 ),
             )
             self.conn.commit()
