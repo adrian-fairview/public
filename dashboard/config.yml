@@ -1,5 +1,5 @@
 Devices:
-  iosxe-test-01:
+  iosxe-test-1:
     type: ios-xe
     address: sandbox-iosxe-latest-1.cisco.com  
     username: developer
