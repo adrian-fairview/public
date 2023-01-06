@@ -194,6 +194,7 @@ class DB:
                     portdetails[interface]["oper_duplex"],
                     sysinfo["serial"],
                     name,
+                    mgmt_ip,
                 ),
             )
             self.conn.commit()
