@@ -112,19 +112,19 @@ def getInterfaceInfo(device):
         elif intdata[iface]["enabled"] and intdata[iface]["oper_status"] == "up":
             interfaceStats["up_port"] += 1
             speed = intdata[iface]["bandwidth"]
-            if speed == 10_000:
+            if speed == 10000:
                 interfaceStats["intop10m"] += 1
-            if speed == 100_000:
+            if speed == 100000:
                 interfaceStats["intop100m"] += 1
-            if speed == 1_000_000:
+            if speed == 1000000:
                 interfaceStats["intop1g"] += 1
-            if speed == 10_000_000:
+            if speed == 10000000:
                 interfaceStats["intop10g"] += 1
-            if speed == 25_000_000:
+            if speed == 25000000:
                 interfaceStats["intop25g"] += 1
-            if speed == 40_000_000:
+            if speed == 40000000:
                 interfaceStats["intop40g"] += 1
-            if speed == 100_000_000:
+            if speed == 100000000:
                 interfaceStats["intop100g"] += 1
         # Count number of interfaces by media type
         try:
